@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button><br />
+    <button id="fortuneButton">Get your Fortune!</button><br />
+    <input
+      id="nameInput"
+      type="text"
+      style="margin: 10px"
+      placeholder="Type Name Here"
+    />
+    <div>
+      <button id="getAll" onclick="getAllNames();">Get All Names!</button>
+      <button id="put" onclick="putName();">
+        Start New List With This Name</button
+      ><br />
+      <button id="post" onclick="postName();">Add Name to List</button><br />
+      <button id="delete" onclick="deleteAllNames();">Delete All Names</button>
+    </div>
+    <br />
+    <div
+      id="display"
+      style="background-color: gray; width: 400px; height: 400px"
+    ></div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
